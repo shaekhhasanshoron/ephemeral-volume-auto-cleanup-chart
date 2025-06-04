@@ -1,0 +1,16 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  labels:
+    control-plane: controller-manager
+    app.kubernetes.io/part-of: ephemeralvolumeautocleanup
+    app.kubernetes.io/instance: manager
+  name: {{ include "ephemeral-volume-cleanup.clusterolebinding.name" . }}
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: {{ include "ephemeral-volume-cleanup.clusterole.name" . }}
+subjects:
+  - kind: ServiceAccount
+    name: {{ include "ephemeral-volume-cleanup.serviceaccount.name" . }}
+    namespace: {{ .Release.Namespace }}

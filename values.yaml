@@ -1,0 +1,7 @@
+replicaCount: 1
+nameOverride: ""
+
+image:
+  repository: shaekhhasan/controller-evac
+  pullPolicy: IfNotPresent
+  tag: "latest"
