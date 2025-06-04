@@ -9,6 +9,6 @@ entries:
     name: ephemeral-volume-auto-cleanup
     type: application
     urls:
-    - https://github.com/shaekhhasanshoron/ephemeral-volume-auto-cleanup-chart/packages/ephemeral-volume-auto-cleanup-1.0.0.tgz
+    - https://shaekhhasanshoron.github.io/ephemeral-volume-auto-cleanup-chart/packages/ephemeral-volume-auto-cleanup-1.0.0.tgz
     version: 1.0.0
 generated: "2025-06-05T01:32:38.489012733+06:00"

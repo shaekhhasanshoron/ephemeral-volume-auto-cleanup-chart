@@ -6,6 +6,7 @@ To adding the chart repository with the name `evac`:
 
 ```
 helm repo add evac https://shaekhhasanshoron.github.io/ephemeral-volume-auto-cleanup-chart
+helm repo update
 ```
 
 ## Installing Chart Release
